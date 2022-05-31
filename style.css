@@ -237,7 +237,8 @@ div {
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    padding-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 0px;
   }
   l {
   list-style-type: none;
@@ -248,10 +249,13 @@ div {
 }
 .sidenav b{
   padding: 5px;
+  padding-top: 30px;
   font-size: 12px;
   color: #D3D3D3;
   display: flex;
   text-align: left;
+  font-size: 10px;
+  max-width: 70px;
 }
 .sidenav a {
   padding: 2px 2px 2px 2px;
@@ -260,11 +264,20 @@ div {
   color: #818181;
   display: flex;
   text-align: left;
+  min-width: 20px;
   }
+.sidenav img{
+  width:85px;border-radius: 25%;border: 5px solid #555;
+  height: 85px;
+  padding-left: 0px:
 
+}
 li {
   display:flex;
   font-size: 5px;
+  padding:8px;
+  padding-top: 2px;
+  padding:-bottom: 2px;
 }
 
 li a {
@@ -274,26 +287,23 @@ li a {
   padding: 0;
   font-size: 5px;
   text-decoration: none;
+
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
 }
-.headshot{
-  width:85px;border-radius: 25%;border: 5px solid #555;
-  height: 85px;
-  padding-left: 0px:
-}
 ul {
   list-style-type: none;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 0px;
   overflow: hidden;
   background-color: #333;
   bottom: 0;
-  width: 0px;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 40px;
+  height: 100%;
+  grid-template-columns: 1fr;
 
 }
 .fa {
@@ -307,3 +317,28 @@ ul {
   background: #FF0000;
   border-width: 0px;
 }
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 100px;
+  padding-left: 0px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.main {
+  margin-left: 0px; /* Same as the width of the sidenav */
+  font-size: 14px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+
+}
+.itemONE {
+  color: #747474;
+  font-family: "Helvetica", "serif";
+  padding 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 14px;
