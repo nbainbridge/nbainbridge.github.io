@@ -239,6 +239,7 @@ div {
     overflow-x: hidden;
     padding-top: 8px;
     padding-bottom: 0px;
+    padding-left:0px;
   }
   l {
   list-style-type: none;
@@ -248,14 +249,14 @@ div {
   background-color: #333;
 }
 .sidenav b{
-  padding: 5px;
+  padding: 2px;
   padding-top: 30px;
-  font-size: 12px;
-  color: #D3D3D3;
+  font-size: 0px;
+  color: #111;
   display: flex;
   text-align: left;
   font-size: 10px;
-  max-width: 70px;
+  max-width: 0px;
 }
 .sidenav a {
   padding: 2px 2px 2px 2px;
@@ -263,7 +264,7 @@ div {
   font-size: 12px;
   color: #818181;
   display: flex;
-  text-align: left;
+  text-align: center;
   min-width: 20px;
   }
 .sidenav img{
@@ -275,9 +276,9 @@ div {
 li {
   display:flex;
   font-size: 5px;
-  padding:8px;
+  padding:0px;
   padding-top: 2px;
-  padding:-bottom: 2px;
+  padding-bottom: 2px;
 }
 
 li a {
@@ -301,7 +302,8 @@ ul {
   overflow: hidden;
   background-color: #333;
   bottom: 0;
-  width: 40px;
+  width:20px;
+  min-width:20px;
   height: 100%;
   grid-template-columns: 1fr;
 
