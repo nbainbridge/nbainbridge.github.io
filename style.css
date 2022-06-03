@@ -219,6 +219,13 @@ div {
 
 
 }
+.itemONE img{
+  width: 510px;
+  height: 552px;
+  border-radius: 25%;border: 5px solid #555;
+  padding-left: 0px:
+}
+
 
 @media only screen and (max-width: 769px) {
 
@@ -319,6 +326,18 @@ ul {
   background: #FF0000;
   border-width: 0px;
 }
+.Resume {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 100px;
+  padding-left: 0px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  text-align: center;
+}
 .about {
   display: flex;
   flex-wrap: wrap;
@@ -344,3 +363,10 @@ ul {
   margin-left: 5px;
   margin-right: 5px;
   font-size: 14px;
+}
+.itemONE img{
+  width: 255px;
+  height: 276px;
+  border-radius: 25%;border: 5px solid #555;
+  padding-left: 0px:
+}
