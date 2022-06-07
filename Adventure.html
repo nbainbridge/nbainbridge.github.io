@@ -41,14 +41,134 @@
     </style>
 
 
-  <body>
-    <div class="about">
+    <body>
+    <div class="about" >
+    <div class="itemONE"><p>Some of my favourite (and tastiest) Creations!</p> </div>
 
-      <div class ="itemONE">Coming Soon!</div>
-      <div class="break"></div>
+    </div>
 
-  </body>
+  <!-- Photo Grid -->
+  <div class="row">
+  <div class="column">
+    <img src="AdventurePics\34.png" style="width:100%">
+    <img src="AdventurePics\1.png" style="width:100%">
+    <img src="AdventurePics\2.png" style="width:100%">
+    <img src="AdventurePics\3.png" style="width:100%">
+    <img src="AdventurePics\4.png" style="width:100%">
+    <img src="AdventurePics\5.png" style="width:100%">
+    <img src="AdventurePics\6.png" style="width:100%">
+    <img src="AdventurePics\7.png" style="width:100%">
+    <img src="AdventurePics\29.png" style="width:100%">
+    <img src="AdventurePics\35.png" style="width:100%">
+    <img src="AdventurePics\39.png" style="width:100%">
+    <img src="AdventurePics\43.png" style="width:100%">
+    <img src="AdventurePics\47.png" style="width:100%">
+    <img src="AdventurePics\51.png" style="width:100%">
+    <img src="AdventurePics\55.png" style="width:100%">
+    <img src="AdventurePics\59.png" style="width:100%">
 
-  </body>
 
-</html>
+  </div>
+  <div class="column">
+    <img src="AdventurePics\8.png" style="width:100%">
+    <img src="AdventurePics\9.png" style="width:100%">
+    <img src="AdventurePics\10.png" style="width:100%">
+    <img src="AdventurePics\11.png" style="width:100%">
+    <img src="AdventurePics\12.png" style="width:100%">
+    <img src="AdventurePics\13.png" style="width:100%">
+    <img src="AdventurePics\14.png" style="width:100%">
+    <img src="AdventurePics\31.png" style="width:100%">
+    <img src="AdventurePics\36.png" style="width:100%">
+    <img src="AdventurePics\40.png" style="width:100%">
+    <img src="AdventurePics\44.png" style="width:100%">
+    <img src="AdventurePics\48.png" style="width:100%">
+    <img src="AdventurePics\52.png" style="width:100%">
+    <img src="AdventurePics\56.png" style="width:100%">
+
+
+
+  </div>
+  <div class="column">
+    <img src="AdventurePics\15.png" style="width:100%">
+    <img src="AdventurePics\16.png" style="width:100%">
+    <img src="AdventurePics\17.png" style="width:100%">
+    <img src="AdventurePics\18.png" style="width:100%">
+    <img src="AdventurePics\19.png" style="width:100%">
+    <img src="AdventurePics\20.png" style="width:100%">
+    <img src="AdventurePics\21.png" style="width:100%">
+    <img src="AdventurePics\32.png" style="width:100%">
+    <img src="AdventurePics\37.png" style="width:100%">
+    <img src="AdventurePics\41.png" style="width:100%">
+    <img src="AdventurePics\45.png" style="width:100%">
+    <img src="AdventurePics\49.png" style="width:100%">
+    <img src="AdventurePics\53.png" style="width:100%">
+    <img src="AdventurePics\57.png" style="width:100%">
+
+  </div>
+  <div class="column">
+    <img src="AdventurePics\33.png" style="width:100%">
+    <img src="AdventurePics\22.png" style="width:100%">
+    <img src="AdventurePics\23.png" style="width:100%">
+    <img src="AdventurePics\24.png" style="width:100%">
+    <img src="AdventurePics\25.png" style="width:100%">
+    <img src="AdventurePics\26.png" style="width:100%">
+    <img src="AdventurePics\27.png" style="width:100%">
+    <img src="AdventurePics\28.png" style="width:100%">
+    <img src="AdventurePics\30.png" style="width:100%">
+    <img src="AdventurePics\38.png" style="width:100%">
+    <img src="AdventurePics\42.png" style="width:100%">
+    <img src="AdventurePics\46.png" style="width:100%">
+    <img src="AdventurePics\50.png" style="width:100%">
+    <img src="AdventurePics\54.png" style="width:100%">
+    <img src="AdventurePics\58.png" style="width:100%">
+
+
+  </div>
+  </div>
+
+  <script>
+  // Get the elements with class="column"
+  var elements = document.getElementsByClassName("column");
+
+  // Declare a loop variable
+  var i;
+
+  // Full-width images
+  function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+  }
+
+  // Two images side by side
+  function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+  }
+
+  // Four images side by side
+  function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+  }
+
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myHeader");
+  var btns = header.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+  }
+  </script>
+    </body>
+
+
+  </html>
