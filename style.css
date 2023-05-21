@@ -97,19 +97,20 @@ ul {
   background-color: #333;
   bottom: 0;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  display:grid;
+  grid-template-columns: auto auto auto;
+
 }
 li {
-  float: left;
-  padding-left:37px;
+  float: center;
+  padding-left:10px;
   bottom: 0;
 }
 li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: auto;
   text-decoration: none;
 }
 li a:hover {
