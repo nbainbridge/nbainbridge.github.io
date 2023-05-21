@@ -12,7 +12,7 @@ p { margin:0 }
 .main {
   margin-left: 280px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  padding: 0px 00px;
 
 }
 .itemONE {
@@ -43,7 +43,7 @@ p { margin:0 }
   text-align: center;
 }
 .break {
-flex-basis: 100%;
+  flex-basis: 100%;
 height: 0;
 }
 .aboutMe {
@@ -158,6 +158,9 @@ li a:hover {
   border-radius: 25%;
   border: 5px solid #555;
 }
+.sidenav c{
+  display:none;
+}
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -250,166 +253,119 @@ div {
   margin-top: 8px;
   vertical-align: middle;
 }
+.menu{
+  display:none;
+}
+.sidenav2{
+  display:none;
+}
 
-@media only screen and (max-width: 769px) {
 
-  body {
-    background-color: lightblue;
+@media (max-width: 800px) {
+  .main {
+    margin-left: 30px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 00px;
+
   }
-  .sidenav {
-    font-size: 5px;
-    display:flex;
-    justify-content: left;
-    height: 100px;
-    width: 100%;
+  .sidenav{
+    display:none;
+  }
+  .menu{
+    display:inline;
+    position: fixed;
+  }
+  .sidenav2 {
+    display:block;
+    height: 100%;
+    width: 00px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    padding-top: 8px;
-    padding-bottom: 0px;
+    transition: 0.5s;
+    padding-top: 60px;
     padding-left:0px;
+    padding-right:0px;
   }
-  l {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-.sidenav b{
-  padding: 2px;
-  padding-top: 30px;
-  font-size: 0px;
-  color: #111;
-  display: flex;
-  text-align: left;
-  font-size: 10px;
-  max-width: 0px;
-}
-.sidenav a {
-  padding: 2px 2px 2px 2px;
-  text-decoration: none;
-  font-size: 12px;
-  color: #818181;
-  display: flex;
-  text-align: center;
-  min-width: 20px;
+
+  .sidenav2 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
   }
-.sidenav img{
-  width:85px;border-radius: 25%;border: 5px solid #555;
-  height: 85px;
-  padding-left: 0px:
+  .sidenav2 c {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
 
-}
-li {
-  display:flex;
-  font-size: 5px;
-  padding:0px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
+  .sidenav2 a:hover {
+    color: #f1f1f1;
+  }
 
-li a {
-  display: flex;
-  color: white;
-  text-align: left;
-  padding: 0;
-  font-size: 5px;
-  text-decoration: none;
+  .sidenav2 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .fa {
+    padding: 2px;
+    font-size: 0px;
+    width: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px;
+    border-radius: 50%;
+    background: #333;
+    border-width: 0px;
+  }
+  .sidenav2 img{
+    width:85px;border-radius: 25%;border: 5px solid #555;
+    height: 85px;
+    padding-left: 0px;
+    align-items: center;
 
-}
+  }
+  .sidenav2 b{
+    padding: 10px;
+    font-size: 25px;
+    color: #D3D3D3;
+    display: block;
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    bottom: 0;
+    width: 100%;
+    display:grid;
+    grid-template-columns: auto auto auto;
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding-top: 0px;
-  overflow: hidden;
-  background-color: #333;
-  bottom: 0;
-  width:20px;
-  min-width:20px;
-  height: 100%;
-  grid-template-columns: 1fr;
-
-}
-.fa {
-  padding: 2px;
-  font-size: 0px;
-  width: 5px;
-  text-align: center;
-  text-decoration: none;
-  margin: 2px;
-  border-radius: 50%;
-  background: #FF0000;
-  border-width: 0px;
-}
-.Resume {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  padding-top: 100px;
-  padding-left: 0px;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  box-sizing: border-box;
-  text-align: center;
-}
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  padding-top: 100px;
-  padding-left: 0px;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  box-sizing: border-box;
-  text-align: center;
-}
-.main {
-  margin-left: 0px; /* Same as the width of the sidenav */
-  font-size: 14px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-
-}
-.itemONE {
-  color: #747474;
-  font-family: "Helvetica", "serif";
-  padding 0px;
-  margin-left: 5px;
-  margin-right: 5px;
-  font-size: 14px;
-}
-.itemONE img{
-  width: 255px;
-  height: 276px;
-  border-radius: 25%;border: 5px solid #555;
-  padding-left: 0px:
-}
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 0 2px;
-}
-
-
-.column {
-  -ms-flex: 25%;
-  flex: 25%;
-  padding: 0 2px;
-}
-
-.column img {
-  margin-top: 4px;
-  vertical-align: middle;
+  }
+  li {
+    float: center;
+    padding-left:10px;
+    bottom: 0;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: auto;
+    text-decoration: none;
+  }
 }
