@@ -314,6 +314,7 @@ div {
 
   .sidenav2 .closebtn {
     position: absolute;
+    cursor:pointer
     top: 0;
     right: 0px;
     font-size: 36px;
